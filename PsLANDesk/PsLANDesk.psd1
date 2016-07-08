@@ -30,7 +30,7 @@ Author = 'Kreloc'
 Description = 'PowerShell module for LANDesk Console Web MBSDK service'
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '3'
+PowerShellVersion = '3.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
