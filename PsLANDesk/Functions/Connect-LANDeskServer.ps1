@@ -22,16 +22,15 @@ Function Connect-LANDeskServer
 
 
         .NOTE
-            Change the default value of the LANDeskServer parameter to your own LANDesk server. All other functions will try to 
-            run this Connect-LANDeskServer if not active connection is found. 
+            This needs to be run before any other function from this module will work.
 			
 	#>
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$False,
+		[Parameter(Mandatory=$True,
 		ValueFromPipeline=$True, ValueFromPipelinebyPropertyName=$true)]
-		[string]$LANDeskServer = "YourLANDeskServerName",
+		[string]$LANDeskServer,
         [switch]$Credential
 	)
 	Begin{}

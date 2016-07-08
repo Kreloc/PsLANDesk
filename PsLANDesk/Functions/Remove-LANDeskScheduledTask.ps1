@@ -36,24 +36,11 @@ Function Remove-LANDeskScheduledTask
 	)
 	Begin
 	{
-        $BeginEA = $ErrorActionPreference
-        $ErrorActionPreference = "Stop"
 		If(!($LANDeskWebService))
 		{
-			Write-Warning -Message "An active connection to the LANDesk Web Service was not found. Will attempt to connect"
-			Try
-            {
-                Write-Verbose "Connecting to LANDesk server."
-                Connect-LANDeskServer
-            }
-            Catch
-            {
-                $ErrorActionPreference = $BeginEA
-                Write-Error "Could not connect to LANDesk server"
-                break
-            }
-		}
-        $ErrorActionPreference = $BeginEA	
+			Write-Warning -Message "An active connection to the LANDesk Web Service was not found. Please run Connect-LANDeskServer before any other functions."
+            break
+        }
 	}
 	Process 
 	{
