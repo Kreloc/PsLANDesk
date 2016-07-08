@@ -1,0 +1,1 @@
+Get-ChildItem -Path $PSScriptRoot -Filter "*.ps1" -Recurse | Foreach-Object{ . $_.FullName }
