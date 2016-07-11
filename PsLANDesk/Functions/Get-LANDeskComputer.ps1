@@ -62,7 +62,7 @@ Function Get-LANDeskComputer
 	param
 	(
         [Parameter(Mandatory=$False, ValueFromPipelinebyPropertyName=$true,ParameterSetName='All')]
-        [string]$List = "List",
+        [switch]$List,
 		[Parameter(Mandatory=$False, ValueFromPipelinebyPropertyName=$true,ParameterSetName='Filter')]
 		[Scriptblock]$Filter,
 		[Parameter(Mandatory=$False,
