@@ -1,5 +1,5 @@
 ---
-external help file: PsLANDesk-help.xml
+external help file: PSLANDesk-help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -28,11 +28,11 @@ Finds and returns vulnerabilities for the selected device.
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
-Get-LANDeskComputer -Filter {$_.ComputerName -like "la-ldp*"} | Get-LANDeskMachineVulnerabilities
+Get-LANDeskComputer -Filter {$_.ComputerName -like "Pre-*"} | Get-LANDeskMachineVulnerabilities
 ```
 
 Returns vulnerabilies found for the all of the computers returned by Get-LANDeskComputers which will only be computers with names
-starting with LA-LDP.
+starting with Pre-.
 
 ## PARAMETERS
 

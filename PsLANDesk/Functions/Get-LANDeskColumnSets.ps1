@@ -26,8 +26,6 @@ Function Get-LANDeskColumnSet
 			Write-Warning -Message "An active connection to the LANDesk Web Service was not found. Please run Connect-LANDeskServer before any other functions."
             break
         }	
-		}
-        $ErrorActionPreference = $BeginEA	
 	}
 	Process 
 	{

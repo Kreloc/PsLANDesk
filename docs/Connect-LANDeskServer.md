@@ -1,53 +1,71 @@
 ---
-external help file: PsLANDesk-help.xml
+external help file: PSLANDesk-help.xml
 online version: 
 schema: 2.0.0
 ---
 
 # Connect-LANDeskServer
 ## SYNOPSIS
-Connects to the webservice of inputted LANDesk server.
+{{Fill in the Synopsis}}
 
 ## SYNTAX
 
 ```
-Connect-LANDeskServer [[-LANDeskServer] <String>]
+Connect-LANDeskServer [-LANDeskServer] <String> [-Credential]
 ```
 
 ## DESCRIPTION
-Connects to the webservice of inputted LANDesk server.
-Creates a global variable for use in the PSLANDesk Module.
+{{Fill in the Description}}
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1
 ```
-Connect-LANDeskServer -LANDeskServer "LDServer"
+PS C:\> {{ Add example code here }}
 ```
 
-Connects to the LDServer.
-It then verifies the rights you have on that server.
+{{ Add example description here }}
 
 ## PARAMETERS
 
+### -Credential
+{{Fill Credential Description}}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: 
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -LANDeskServer
-The name of the LANDesk server to connect to.
+{{Fill LANDeskServer Description}}
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
 
-Required: False
-Position: 1
-Default value: Avjnu00
+Required: True
+Position: 0
+Default value: 
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
 ## INPUTS
 
+### System.String
+
+
 ## OUTPUTS
+
+### System.Object
 
 ## NOTES
 

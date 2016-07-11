@@ -1,5 +1,5 @@
 ---
-external help file: PsLANDesk-help.xml
+external help file: PSLANDesk-help.xml
 online version: 
 schema: 2.0.0
 ---
@@ -21,11 +21,10 @@ The Start-LANDeskTask function starts the specified LANDesk Scheduled Task and r
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```
-Start-LANDeskTask 877
+
 ```
 
-Starts the LANDesk Scheduled Task with an ID of 877.
-(LAAWorkStationAgent)
+Starts the LANDesk Scheduled Task with an ID of \<IDNumber\>
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```

@@ -1,21 +1,21 @@
 ---
-external help file: PsLANDesk-help.xml
+external help file: PSLANDesk-help.xml
 online version: 
 schema: 2.0.0
 ---
 
-# Start-LANDeskInventoryScanner
+# Remove-LANDeskComputer
 ## SYNOPSIS
-Start the LANDesk Inventory Scanner on remote computer.
+Removes specified computer from LANDesk.
 
 ## SYNTAX
 
 ```
-Start-LANDeskInventoryScanner [-ComputerName] <String[]> [-WhatIf] [-Confirm]
+Remove-LANDeskComputer [-ComputerName] <String[]> [-WhatIf] [-Confirm]
 ```
 
 ## DESCRIPTION
-Start the LANDesk Inventory Scanner on remote computer.
+Removes specified computer from LANDesk.
 
 ## EXAMPLES
 
@@ -24,19 +24,26 @@ Start the LANDesk Inventory Scanner on remote computer.
 
 ```
 
-Starts the Inventory scanner on the remote computer.
+Removes the computer specified for ComputerName.
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
-Get-Content computers.txt | Get-Blank
+Remove-LANDesk -ComputerName "THATPC" -WhatIf
 ```
 
-Start the LANDesk Inventory Scanner on remote computer on each computer in the text file computers.txt
+Removes the computer named THATPC but doesn't perform the action, instead displaying the WhatIf message.
+
+### -------------------------- EXAMPLE 3 --------------------------
+```
+Get-Content computers.txt | Remove-LANDeskComputer
+```
+
+Remove each computername listed on each line of computers.txt
 
 ## PARAMETERS
 
 ### -ComputerName
-The name of the target computer.
+The name or names of the computers to remove from the LANDesk database.
 
 ```yaml
 Type: String[]

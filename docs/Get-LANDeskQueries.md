@@ -1,5 +1,5 @@
 ---
-external help file: PsLANDesk-help.xml
+external help file: PSLANDesk-help.xml
 online version: 
 schema: 2.0.0
 ---
